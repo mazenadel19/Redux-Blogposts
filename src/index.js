@@ -4,7 +4,7 @@ import App from './components/App'
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import reducers from '../../redux-songs/src/reducers'
+import reducers from './reducers'
 
 ReactDOM.render(
 	<React.StrictMode>
