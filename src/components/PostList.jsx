@@ -10,7 +10,6 @@ const PostList = () => {
 	}, [])
 
 	const posts = useSelector(state => state.posts)
-	console.log(posts)
 	return (
 		<div>
 			<h1>PostList</h1>
