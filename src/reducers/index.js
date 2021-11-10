@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
 // your reducers here
 
@@ -13,10 +13,14 @@ import { combineReducers } from 'redux';
 
 // 	return somedata
 // }
+const getPosts = (state = [], action) => {
+	if (action.type === 'FETCH_POSTS') {
+		return action.payload
+	}
 
-
+	return state
+}
 
 export default combineReducers({
-	// somevalue: 'someReducer',
-	// someOtherValue: 'someOtherReducer',
+	posts: getPosts,
 })

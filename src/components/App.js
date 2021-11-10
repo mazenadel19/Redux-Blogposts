@@ -1,5 +1,11 @@
+import PostList from './PostList'
+
 const App = () => {
-	return <div>redux blogposts</div>
+	return (
+		<div className='ui container'>
+			<PostList />
+		</div>
+	)
 }
 
 export default App
