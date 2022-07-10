@@ -7,7 +7,7 @@ const PostList = () => {
 
 	useEffect(() => {
 		dispatch(fetchPosts())
-	}, [])
+	}, [dispatch])
 
 	const posts = useSelector(state => state.posts)
 	return (
